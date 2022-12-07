@@ -1,6 +1,6 @@
 # TCL: Text-grounded Contrastive Learning for Unsupervised Open-world Semantic Segmentation
 
-**Learning to Generate Text-grounded Mask for Open-world Semantic Segmentation from Only Image-Text Pairs**
+[**Learning to Generate Text-grounded Mask for Open-world Semantic Segmentation from Only Image-Text Pairs**](https://arxiv.org/abs/2212.00785)
 
 Junbum Cha, Jonghwan Mun, and Byungseok Roh.
 
@@ -31,10 +31,10 @@ The code will be released soon.
 ## Citation
 
 ```bibtex
-@inproceedings{cha2022tcl,
+@article{cha2022tcl,
   title={Learning to Generate Text-grounded Mask for Open-world Semantic Segmentation from Only Image-Text Pairs},
-  author={Junbum Cha and Jonghwan Mun and Byungseok Roh},
-  booktitle={arxiv},
+  author={Cha, Junbum and Mun, Jonghwan and Roh, Byungseok},
+  journal={arXiv preprint arXiv:2212.00785},
   year={2022}
 }
 ```
