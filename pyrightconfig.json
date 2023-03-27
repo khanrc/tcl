@@ -1,0 +1,8 @@
+{
+  "exclude": [
+    "**/__pycache__",
+    "notebooks",
+    "output",
+    "data"
+  ]
+}

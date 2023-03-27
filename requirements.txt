@@ -1,0 +1,12 @@
+webdataset==0.1.103
+timm==0.6.7
+einops==0.4.1
+tqdm==4.62.3
+wandb==0.12.18
+regex==2022.6.2
+braceexpand==0.1.7
+ftfy==6.1.1
+numpy==1.21.2
+omegaconf==2.2.2
+Pillow==9.3.0
+termcolor==1.1.0
