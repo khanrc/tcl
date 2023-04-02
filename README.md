@@ -193,6 +193,8 @@ torchrun --rdzv_endpoint=$HOST:$PORT --nproc_per_node=auto --nnodes=$NNODES --no
 
 ## Evaluation
 
+We provide [an official checkpoint](https://github.com/kakaobrain/tcl/releases/download/v1.0.0/tcl.pth) to reproduce the main results of our paper.
+
 Zero-shot transfer to semantic segmentation:
 
 ```
