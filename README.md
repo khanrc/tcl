@@ -4,13 +4,8 @@ Official PyTorch implementation of [**Learning to Generate Text-grounded Mask fo
 
 **T**ext-grounded **C**ontrastive **L**earning (TCL) is an open-world semantic segmentation framework using only image-text pairs. TCL enables a model to learn region-text alignment without train-test discrepancy.
 
-We will release a demo soon.
+[Demo page](https://huggingface.co/spaces/khanrc/tcl) is available. Since this demo runs on a free HuggingFace CPU space, inference times may take around 5-10 seconds.
 
-<!-- <div align="center">                                      -->
-<!-- <figure>                                                  -->
-<!--   <img alt="" src="./assets/radar_chart.jpg" width="480"> -->
-<!-- </figure>                                                 -->
-<!-- </div>                                                    -->
 <div align="center">
 <figure>
   <img alt="" src="./assets/method.jpg">
