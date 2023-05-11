@@ -4,7 +4,7 @@ Official PyTorch implementation of [**Learning to Generate Text-grounded Mask fo
 
 **T**ext-grounded **C**ontrastive **L**earning (TCL) is an open-world semantic segmentation framework using only image-text pairs. TCL enables a model to learn region-text alignment without train-test discrepancy.
 
-[Demo page](https://huggingface.co/spaces/khanrc/tcl) is available. Since this demo runs on a free HuggingFace CPU space, inference times may take around 5-10 seconds.
+[**Demo page**](https://huggingface.co/spaces/khanrc/tcl) is available. Since this demo runs on a free HuggingFace CPU space, inference times may take around 5-10 seconds.
 
 <div align="center">
 <figure>
@@ -190,11 +190,20 @@ torchrun --rdzv_endpoint=$HOST:$PORT --nproc_per_node=auto --nnodes=$NNODES --no
 
 We provide [an official checkpoint](https://github.com/kakaobrain/tcl/releases/download/v1.0.0/tcl.pth) to reproduce the main results of our paper.
 
-Zero-shot transfer to semantic segmentation:
+- Zero-shot transfer to semantic segmentation (Table 2):
 
 ```
 torchrun --rdzv_endpoint=localhost:5 --nproc_per_node=auto main.py --resume checkpoints/tcl.pth --eval
 ```
+
+- Evaluation without PAMR (Table 3 in Appendix):
+
+```
+torchrun --rdzv_endpoint=localhost:5 --nproc_per_node=auto main.py --resume checkpoints/tcl.pth --eval \
+    --opts evaluate.pamr=false evaluate.bg_thresh=0.5
+```
+
+Note that we use `bg_threshold` of 0.4 with PAMR and 0.5 without PAMR, since we observed that PAMR tends to reduce the foreground area.
 
 
 ## Citation
